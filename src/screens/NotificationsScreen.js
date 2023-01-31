@@ -3,15 +3,12 @@ import { Button, View } from 'react-native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 
-function HomeScreen({navigation}) {
+function NotificationsScreen({navigation}) {
     return (
         <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          <Button
-            onPress={() => navigation.navigate('Notifications')}
-            title="Go to notifications"
-          />
+          <Button onPress={() => navigation.goBack()} title="Go back home" />
         </View>
       );
 }
 
-export default HomeScreen
+export default NotificationsScreen

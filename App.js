@@ -1,16 +1,14 @@
 import React from "react";
-
-//👇🏻 app screens
-
-
-//👇🏻 React Navigation configurations
+import { Button, View } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native";
+import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Login from "./src/screens/Login";
 import Chat from "./src/screens/Chat";
 import Messaging from './src/screens/Messaging'
 
 const Stack = createNativeStackNavigator();
+
 
 export default function App() {
     return (
